@@ -17,15 +17,28 @@
    <widget class="QPlainTextEdit" name="plainTextEdit">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>10</y>
       <width>281</width>
-      <height>201</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="plainText">
      <string>Hello Otakumanager!
 --Bauce K</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
     </property>
    </widget>
   </widget>
@@ -35,13 +48,16 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>23</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHello_Otakumanager">
     <property name="title">
      <string>Hello Otakumanager</string>
     </property>
+    <addaction name="actionK"/>
+    <addaction name="separator"/>
+    <addaction name="actionA_AVG_MAnager"/>
    </widget>
    <addaction name="menuHello_Otakumanager"/>
   </widget>
@@ -54,8 +70,35 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionK">
+   <property name="text">
+    <string>K</string>
+   </property>
+  </action>
+  <action name="actionA_AVG_MAnager">
+   <property name="text">
+    <string>A AVG Manager</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
