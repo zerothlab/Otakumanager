@@ -48,7 +48,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHello_Otakumanager">
@@ -59,7 +59,14 @@
     <addaction name="separator"/>
     <addaction name="actionA_AVG_MAnager"/>
    </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="aboutom"/>
+   </widget>
    <addaction name="menuHello_Otakumanager"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -78,6 +85,14 @@
   <action name="actionA_AVG_MAnager">
    <property name="text">
     <string>A AVG Manager</string>
+   </property>
+  </action>
+  <action name="aboutom">
+   <property name="text">
+    <string>About Otakumanager...</string>
+   </property>
+   <property name="toolTip">
+    <string>About Otakumanager...</string>
    </property>
   </action>
  </widget>

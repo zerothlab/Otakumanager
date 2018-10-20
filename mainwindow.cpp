@@ -17,3 +17,8 @@ void MainWindow::on_pushButton_clicked()
 {
 
 }
+
+void MainWindow::on_aboutom_triggered()
+{
+
+}
